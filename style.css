@@ -1,0 +1,394 @@
+body
+{
+    background-color: #F9F9F9;
+    width: 100%;
+    border: 1px solid #a5d1e6;
+    margin: auto;
+ }
+
+*
+{
+    font-family: 'Ubuntu', 'Arial', sans-serif;
+    line-height: 1.2;
+    color: #444;
+}
+
+/*En-tête*/
+
+.titre
+{
+	width: 65%; 
+}
+
+header
+{
+	display: flex;
+	flex-direction: row;
+}
+
+h1, h1 + p
+{
+    text-align: left;
+    margin-left: 5%;
+}
+
+h1
+{
+	font-size: 3em;
+	margin-top: 15%;
+	color: #444;
+}
+
+h1 + p
+{
+	font-size: 1.5em;
+}
+
+.bordure_st
+{
+	border-bottom: 2px solid #a5d1e6;
+}
+
+p
+{
+	text-align: justify;
+}
+
+.prenom
+{
+	color: #a5d1e6;
+}
+
+img
+{
+	margin-left: 17%;
+	margin-top: 15%;
+    border: 3px solid #444;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.Photo
+{
+	background-color: #a5d1e6;
+	width: 35%;
+}
+
+/*Corps de page*/
+
+#contenu
+{
+    display: flex;
+    flex-direction: top;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+/*aside*/
+
+aside section:nth-child(2) 
+{
+    flex-grow: 1;
+}
+
+aside
+{
+	background-color: #a5d1e6;
+	width: 35%;
+	flex-direction: column;
+	display: flex;
+}
+
+.Contact p
+{
+	margin-left: 5%;
+	overflow: auto;
+}
+
+.Apropos p
+{
+	margin-left: 5%;
+	margin-right: 5%;
+	line-height: 1.5;
+	text-align: justify;
+}
+
+.competences p
+{
+	margin-left: 5%;
+	margin-right: 5%;
+	line-height: 1.5;
+	text-align: left;
+}
+
+.Loisirs
+{
+	margin-left: 5%;
+	margin-right: 5%;
+	display: flex;
+	flex-direction: column;
+}
+
+.Loisirs p
+{
+	text-align: center;
+}
+
+h3
+{
+	background-color: #444;
+	text-align: center;
+	color: #a5d1e6;
+}
+
+.icon 
+{
+    width: 70px;
+    height: 70px;
+    font-size: 25px;
+    border: 2px solid #444;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+/*main*/
+
+main
+{
+	width: 63%;
+}
+
+ul 
+{
+	list-style: none
+}
+
+li::before 
+{
+	content: "•"; color: #a5d1e6
+}
+
+li::before 
+{
+	content: "•"; color: #a5d1e6;
+  	display: inline-block; width: 1em;
+  	margin-left: -1em
+}
+
+li
+{
+	color: #444;
+	margin:1em;
+}
+
+h2
+{
+    color: #444;
+    border-bottom: 2px solid #a5d1e6;
+    margin-left: 5%;
+}
+
+h2 + a
+{
+	border: none;
+	color: #a5d1e6;
+}
+
+.dates11 li
+{
+   list-style-image: url(Images/puce.png);
+}
+
+.dates1, .dates11
+{
+	width: 35%;
+}
+.dates2
+{
+	width: 65%;
+}
+
+main section
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+
+.experience
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.dates
+{
+	display: flex;
+	flex-direction: row; 
+}
+
+.formation
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.Recommandations
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.Reco1, .Reco2
+{
+	text-align: left;
+	width: 50%;
+	margin-left: 10%;
+}
+
+.fa-briefcase, .fa-graduation-cap, .fa-edit
+{
+	color: #a5d1e6;
+}
+
+.expérience
+{
+	display: flex;
+}
+
+/*Résolution tablette
+
+@media screen and (max-width: 991px)
+{
+
+body
+{
+	width: 720px;
+}
+
+.Photo img
+{
+	margin-left: 20%;
+}
+
+.Apropos
+{
+	margin-bottom: 15em;
+}
+
+.dates1, .dates11
+{
+	width: 40%;
+}
+}
+*/
+/*Résolution mobile
+
+@media screen and (max-width: 720px)
+{
+
+header
+{
+	display: flex;
+	flex-direction: column;
+	width: auto;
+}
+
+.Photo img
+{
+	margin-left: 35%;
+}
+
+h1,h1 + p
+{
+	text-align: center;
+}
+
+.titre
+{
+	width: 100%
+}
+
+body
+{
+	width: 100%;
+	margin: none;
+}
+
+section
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+#contenu
+{
+    width: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.Photo
+{
+	width: 100%
+}
+
+aside, main
+{
+	width: 100%;
+}
+
+.dates, .Recommandations
+{
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 8px #90A4AE;
+    border-radius: 5px;
+}
+
+.Reco1, .Reco2
+{
+	margin-left: 30%;
+	width: auto;
+}
+
+.dates1, .dates11
+{
+	width: 100%;
+}
+
+.dates2
+{
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 0%;
+	width: 85%;
+}
+
+img
+{
+	margin: 10%;
+}
+
+.Apropos
+{
+	height: auto;
+	margin-bottom: 0%;
+}
+
+.Contact p
+{
+	text-align: center;
+	margin: 0%;
+}
+}
+*/
